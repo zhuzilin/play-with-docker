@@ -1,0 +1,15 @@
+{
+  "name": "random-backend",
+  "version": "0.0.1",
+  "description": "a backend that return 500 randomly",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "author": "zhuzilin",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

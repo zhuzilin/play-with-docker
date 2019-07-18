@@ -1,0 +1,22 @@
+# to get depends on work
+version: '2.1'
+
+# the docker compose will create a default sharing network
+services:
+  express1:
+    build: express1/
+    # if not change hostname,
+    # the default hostname will be the container ID
+    hostname: express1
+  express2:
+    build: express2/
+    hostname: express2
+  webserver:
+    build: nginx/
+    ports:
+    - "8080:80"
+    # must run after express, 
+    # otherwise nginx won't find hostname express
+    depends_on:
+    - "express1"
+    - "express2"

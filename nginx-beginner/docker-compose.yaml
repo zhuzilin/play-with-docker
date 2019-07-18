@@ -1,0 +1,5 @@
+# docker-compose up -d
+nginx:
+  build: ./nginx
+  ports:
+  - "8080:80"

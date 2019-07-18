@@ -1,0 +1,2 @@
+# don't copy node_modules to image
+node_modules/
