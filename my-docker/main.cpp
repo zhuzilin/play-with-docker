@@ -41,7 +41,7 @@ void limit_process_creation() {
 
     write_rule(cgroup_folder + "/cgroup.procs", pid);
     write_rule(cgroup_folder + "/notify_on_release", "1");
-    write_rule(cgroup_folder + "/pids.max", "5");
+    //write_rule(cgroup_folder + "/pids.max", "30");
 }
 
 char *stack_memory() {
